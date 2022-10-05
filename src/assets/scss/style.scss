@@ -1,0 +1,80 @@
+/* FONTS*/
+@font-face {
+  font-family: 'durer';
+  src: url('../fonts/durer/durer-webfont.woff2') format('woff2'),
+       url('../fonts/durer/durer-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'ramona';
+  src: url('../fonts/ramona/Ramona-Light.ttf') format('truetype');
+}
+/* VARIABLES */
+// colors
+$background-color: #eaf2fb;
+// fonts
+$primary-font: 'ramona';
+$secondary-font: 'durer';
+
+
+/* DEFAULT */
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
