@@ -65,6 +65,22 @@ fontLoader.load(
         const textMaterial = new THREE.MeshMatcapMaterial({matcap: matcapTexture})
         const text = new THREE.Mesh(textGeometry, textMaterial)
         scene.add(text)
+        // clock
+        const clock = new THREE.Clock
+
+        // tick
+        const tick = () => {
+            // elapsed time
+            const elapsedTime = clock.getElapsedTime()
+
+            text.rotation.y = - elapsedTime / 12
+
+            // render
+            renderer.render(scene, camera)
+            // call tick again on the next frame
+            window.requestAnimationFrame(tick)
+        }
+        tick()
     }
 )
 
@@ -478,6 +494,8 @@ scene.add(
 
 /* CAMERA */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 100)
+camera.position.x = - 2
+camera.position.y = - 1
 camera.position.z = 7
 
 scene.add(camera)

@@ -47,7 +47,9 @@
     font-family: $secondary-font;
 
     &-type {
+      position: absolute;
       font-size: 100px;
+      margin: -6rem 0 0 0;
 
       &Symbol {
         color: $text-color-light;
@@ -57,7 +59,7 @@
     &-dev {
       position: relative;
       font-size: 150px;
-      margin: -3.75rem 0 0 0;
+      margin: 5.5rem 0 0 0;
     }
 
     &-subtitle {
@@ -73,7 +75,7 @@
 
       &-dev {
         font-size: 100px;
-        margin: -3rem 0 0 0;
+        margin: 4.5rem 0 0 0;
       }
 
       &-subtitle {
@@ -97,12 +99,23 @@
         margin: -2rem 0 0 0;
       }
     }
+
+    @media (max-width: 375px) {
+      &-dev {
+        font-size: 60px;
+      }
+
+      &-subtitle {
+        margin: -1.5rem 0 0 0;
+      }
+    }
   }
 
   &__text {
     position: relative;
     font-family: $primary-font;
     font-size: 21px;
+    color: $text-color-light;
     padding: 2rem 4rem 0 0;
 
     @media (max-width: 1440px) {
