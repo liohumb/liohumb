@@ -1,17 +1,305 @@
 @import "style";
 
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
 .contact {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-items: center;
-  background: $dark-color;
+  justify-content: center;
+  background: $first-color;
+  padding: 6rem 2rem;
 
-  h1 {
-    font-family: $secondary-font;
-    font-size: 100px;
-    text-transform: uppercase;
-    color: $background-color;
-    text-align: center;
+  @media (max-width: 1024px) {
+    padding: 6rem 2rem;
+  }
+
+  @media (max-width: 425px) {
+    justify-content: inherit;
+    padding: 6rem 0;
+  }
+
+  &__title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    color: $text-color;
+    cursor: default;
+    margin: 0 0 10rem 0;
+    
+    @media (max-width: 425px) {
+      transform: translateX(-15%);
+    }
+
+    @media (max-width: 320px) {
+      transform: translateX(-25%);
+    }
+  }
+
+  &__form {
+    &-contents {
+      display: flex;
+      gap: 1rem;
+      margin: 0 0 2rem 0;
+
+      textarea {
+        width: 70%;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid $lighten-color;
+        font-family: $primary-font;
+        font-size: 27px;
+        color: $lighten-color;
+        resize: none;
+        padding: 0;
+        margin: 0;
+
+        &::placeholder {
+          color: $light-color;
+          font-style: italic;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        @media (max-width: 1126px) {
+          font-size: 22px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 2rem;
+      }
+
+      @media (max-width: 375px) {
+        padding: 1rem;
+      }
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      font-family: $primary-font;
+      font-size: 27px;
+      color: $lighten-color;
+
+      label {
+        margin: 0 .5rem 0 0;
+      }
+
+      input {
+        width: 200px;
+        font-size: inherit;
+        border: none;
+        background: transparent;
+        font-family: $primary-font;
+        color: $lighten-color;
+
+        &::placeholder {
+          color: $light-color;
+          font-style: italic;
+        }
+
+        &[type="email"] {
+          width: 400px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        font-size: 32px;
+      }
+
+      @media (max-width: 1195px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 1126px) {
+        font-size: 17px;
+
+        input {
+          width: 140px;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        input {
+          width: 112px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: start;
+
+        span {
+          display: none;
+        }
+
+        input {
+          width: 200px;
+        }
+
+        &[type="email"] {
+          width: 200px;
+        }
+      }
+    }
+
+    &-button {
+      position: absolute;
+      right: 5%;
+      transform: translateX(-50%);
+      display: grid;
+      gap: 0;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      background: transparent;
+      border: none;
+      font-family: $secondary-font;
+      font-size: 27px;
+      text-align: center;
+      color: $light-color;
+      cursor: pointer;
+      transition: all 1s ease;
+
+      svg {
+        width: 40px;
+        fill: $light-color;
+        opacity: 0;
+        transform: translateX(-150%);
+        transition: all 1s ease;
+      }
+
+      &:hover {
+        transform: translateX(-50%) scale(1.2);
+
+        svg {
+          transform: translateX(-50%);
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: $lighten-color;
+        opacity: 1;
+        transition: all 1s ease;
+        margin: -.75rem 0 0 0;
+      }
+
+      &:hover:after {
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+
+      @media (max-width: 768px) {
+        right: 0;
+        transform: translateX(0%);
+      }
+    }
+  }
+
+  &__socials {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 10rem 0 0 0;
+
+    @media (max-width: 768px) {
+      width: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+    
+    @media (max-width: 425px) {
+      transform: translateX(-25%);
+    }
+
+    a {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+
+      span {
+        svg {
+          width: 75px;
+          fill: $lighten-color;
+
+          @media (max-width: 768px) {
+            width: 50px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        &:after {
+          font-size: 20px;
+
+          @media (max-width: 1024px) {
+            font-size: 17px;
+          }
+        }
+        &:hover:after {
+          transform: translate3d(0, 35%, 0);
+        }
+      }
+
+      &:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        font-family: $secondary-font;
+        font-size: 40px;
+        color: $lighten-color;
+        transform: translate3d(0, 125%, 0);
+        transition: transform .7s cubic-bezier(.42,.97,.52,1.49);
+
+        @media (max-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+
+      & span {
+        transition: transform .7s cubic-bezier(.42,.97,.52,1.49);
+      }
+
+      &:hover:after {
+        transform: translate3d(0, 12%, 0);
+
+        @media (max-width: 1024px) {
+          transform: translate3d(0, 25%, 0);
+        }
+      }
+
+      &:hover span {
+        transform: translate3d(0, -125%, 0);
+      }
+    }
   }
 }
