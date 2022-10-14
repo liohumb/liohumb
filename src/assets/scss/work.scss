@@ -269,6 +269,27 @@
         stroke-width: 1px;
         color: $text-color-light;
       }
+
+      &Github {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        transform: translateX(-50%);
+        width: 75px;
+
+        &Wood {
+          position: absolute;
+          bottom: 0;
+          left: 100%;
+          transform: translateX(-50%);
+          width: 75px;
+          cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
     }
 
     .title {
