@@ -285,9 +285,15 @@
           width: 75px;
           cursor: not-allowed;
         }
+      }
 
-        @media (max-width: 768px) {
+      @media (max-width: 768px) {
+        &Github {
           display: none;
+
+          &Wood {
+            display: none;
+          }
         }
       }
     }
