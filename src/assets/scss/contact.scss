@@ -10,7 +10,7 @@
   display: grid;
   place-items: center;
   justify-content: center;
-  background: $first-color-light;
+  background: linear-gradient($light-color, $first-color-light);
   padding: 6rem 2rem;
 
   @media (max-width: 1024px) {

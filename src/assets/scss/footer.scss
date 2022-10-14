@@ -2,6 +2,331 @@
 
 .footer {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient($first-color-light, $dark-color);
+
+  &__header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: 4rem 0;
+
+    &-logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate3d(0, -50%, 0);
+      display: flex;
+      animation: moveLeft 60s linear infinite;
+
+      @keyframes moveLeft {
+        0% {
+          transform: translate3d(0, -50%, 0);
+        }
+        100% {
+          transform: translate3d(-50%, -50%, 0);
+        }
+      }
+
+      img {
+        height: 275px;
+        margin: 0 5rem;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 8rem 4rem 2rem 4rem;
+
+    @media (max-width: 1024px) {
+      height: 600px;
+    }
+
+    &-left {
+      width: 60%;
+      height: 100%;
+    }
+
+    &-right {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      height: 800px;
+      flex-direction: column;
+
+      &-left,
+      &-right {
+        width: 100%;
+      }
+
+      &-left {
+        height: 15%;
+      }
+    }
+
+    @media (max-width: 425px) {
+      padding: 8rem 1rem 2rem 1rem;
+    }
+  }
+
+  &__title {
+    font-family: $primary-font;
+    text-transform: uppercase;
+
+    &-first {
+      font-size: 27px;
+      color: $text-color-light;
+      margin: 0;
+    }
+
+    &-second {
+      font-size: 87px;
+      text-align: center;
+      color: $lighten-color;
+      margin: -.75rem 0 0 0;
+    }
+    
+    &-third {
+      font-size: 100px;
+      text-align: end;
+      margin: -3.5rem 0 0 0;
+    }
+
+    @media (max-width: 1024px) {
+      &-first {
+        font-size: 17px;
+      }
+
+      &-second {
+        font-size: 55px;
+        margin: 0;
+      }
+
+      &-third {
+        font-size: 75px;
+        margin: -1.75rem 0 0 0;
+      }
+    }
+
+    @media (max-width: 425px) {
+      &-first {
+        font-size: 15px;
+      }
+
+      &-second {
+        font-size: 45px;
+        margin: 0;
+      }
+
+      &-third {
+        font-size: 50px;
+        margin: -1.25rem 0 0 0;
+      }
+    }
+  }
+
+  &__contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    &-name {
+      font-family: $secondary-font;
+      font-size: 50px;
+      color: $text-color-light;
+
+      span {
+        color: $first-color-light;
+      }
+    }
+
+    &-email {
+      font-family: $primary-font;
+      font-size: 27px;
+      color: $text-color-light;
+
+      &Hello {
+        color: $light-color;
+      }
+
+      &Lio {
+        color: $background-color;
+        margin: 0 -.35rem;
+      }
+
+      &Humb {
+        color: $lighten-color;
+        margin: 0 -.5rem 0 0;
+      }
+    }
+
+    &-phone {
+      font-family: $primary-font;
+      font-size: 25px;
+      color: $text-color-light;
+
+      &Zero {
+        color: $first-color-light;
+      }
+
+      &First,
+      &Third,
+      &Fifth {
+        color: $light-color;
+      }
+
+      &Second,
+      &Fourth {
+        color: $background-color;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      &-name {
+        font-size: 32px;
+      }
+
+      &-email {
+        font-size: 17px;
+
+        &Lio {
+          margin: 0 -.25rem;
+        }
+
+        &Humb {
+          margin: 0 -.25rem 0 0;
+        }
+      }
+
+      &-phone {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      &-name {
+        font-size: 47px;
+      }
+
+      &-email {
+        font-size: 25px;
+
+        &Lio {
+          margin: 0 -.35rem;
+        }
+
+        &Humb {
+          margin: 0 -.35rem 0 0;
+        }
+      }
+
+      &-phone {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      &-name {
+        font-size: 32px;
+      }
+
+      &-email {
+        font-size: 17px;
+
+        &Lio {
+          margin: 0 -.25rem;
+        }
+
+        &Humb {
+          margin: 0 -.25rem 0 0;
+        }
+      }
+
+      &-phone {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__links {
+    &-list {
+      padding: 0;
+    }
+
+    &-link {
+      position: relative;
+      display: flex;
+      font-family: $secondary-font;
+      font-size: 17px;
+      color: $lighten-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      overflow: hidden;
+      margin: .5rem 0;
+
+      span {
+        transition: transform .7s cubic-bezier(.42,.97,.52,1.49);
+      }
+
+      &:hover span {
+        transform: translate3d(0, -100%, 0);
+      }
+
+      &:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        color: $light-color;
+        transform: translate3d(0, 100%, 0);
+        transition: transform .7s cubic-bezier(.42,.97,.52,1.49);
+      }
+      
+      &:hover:after {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  &__copyright {
+    font-family: $primary-font;
+    font-size: 12px;
+    color: $text-color-light;
+    text-transform: uppercase;
+    margin: 2rem 0 0 0;
+
+    span {
+      color: $first-color-light;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 10px;
+    }
+  }
 }
