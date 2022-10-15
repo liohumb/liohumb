@@ -692,4 +692,47 @@
       height: #{150vmin * 5};
     }
   }
+
+  @media (max-height: 440px) {
+    display: none;
+  }
+}
+
+.mobile__work {
+  display: none;
+
+  @media (max-height: 440px) {
+    width: 100vw;
+    height: 75vh;
+    display: grid;
+    place-items: center;
+    background: $background-color;
+  }
+
+  svg {
+    height: 50%;
+    animation: turn 4s linear infinite;
+    fill: $lighten-color;
+
+    @keyframes turn {
+      0% {
+        transform: rotate(-90deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  h1 {
+    font-family: $secondary-font;
+    font-size: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $light-color;
+    max-height: -10rem 0 0 0;
+  }
 }
