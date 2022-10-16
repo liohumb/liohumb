@@ -73,3 +73,17 @@ const next = () => {
 }
 
 next()
+
+/* PICTURES */
+const polaroidMe = document.querySelector('.about__profil-me')
+const zoomMeSpeed = .01
+
+let zoom = 1
+
+document.addEventListener('wheel', (e) => {
+    if (e.deltaY > 0) {
+        polaroidMe.style.transform = `scale(${(zoom += zoomMeSpeed)})`
+    } else {
+        polaroidMe.style.transform = `scale(${(zoom -= zoomMeSpeed)})`
+    }
+})

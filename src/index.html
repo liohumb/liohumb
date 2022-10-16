@@ -58,7 +58,10 @@
         <!--ABOUT-->
         <section class="about" id="about">
             <div class="about__container">
-                <div class="about__container-left">
+                <div class="about__container-left"
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-anchor-placement="top-bottom">
                     <h3 class="about__subtitle">_bonjour, je m'appelle Lionel Humbert <br>& je suis</h3>
                     <div class="about__title">
                         <div class="about__title-type"></div>
@@ -75,15 +78,27 @@
                         j'ai quitté mon ancien travail pour entreprendre une carrière de développeur à défaut de devenir une rockstar!
                     </p>
                 </div>
-                <div class="about__container-right"></div>
+                <div class="about__container-right"
+                     data-aos="fade-down"
+                     data-aos-duration="1000"
+                     data-aos-anchor-placement="top-bottom">
+                    <div class="about__profil">
+                        <img src="assets/images/about/polaroid_us.png" alt="Polaroid de Lionel Humbert" class="about__profil-us">
+                        <img src="assets/images/about/polaroid_me.png" alt="Polaroid de Lionel Humbert" class="about__profil-me">
+                    </div>
+                </div>
             </div>
         </section>
         <!--WORK-->
-        <section class="work">
+        <section class="work" id="work">
             <h1 class="work__title">&__my-work</h1>
             <div class="work__container">
                 <div class="work__cards">
-                    <div class="work__card work__portfolio">
+                    <div class="work__card work__portfolio"
+                         data-aos="fade-left"
+                         data-aos-duration="3000"
+                         data-aos-delay="200"
+                         data-aos-anchor-placement="center-bottom">
                         <div class="work__card-infos">
                             <div class="work__card-link">
                                 <img src="assets/images/work/here.png" alt="logo vous êtes ici soit sur le portfolio de Lionel Humbert alias Lio Humb">
@@ -173,7 +188,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="work__card work__soubeyran">
+                    <div class="work__card work__soubeyran"
+                         data-aos="fade-left"
+                         data-aos-duration="3000"
+                         data-aos-delay="200"
+                         data-aos-anchor-placement="center-bottom">
                         <div class="work__card-infos">
                             <div class="work__card-link">
                                 <a href="https://le-soubeyran.fr/"
@@ -304,7 +323,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="work__card work__pegase">
+                    <div class="work__card work__pegase"
+                         data-aos="fade-left"
+                         data-aos-duration="3000"
+                         data-aos-delay="200"
+                         data-aos-anchor-placement="center-bottom">
                         <div class="work__card-infos">
                             <div class="work__card-link">
                                 <a href="https://lesailesdepegase.fr/"
@@ -426,7 +449,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="work__card work__wood">
+                    <div class="work__card work__wood"
+                         data-aos="fade-left"
+                         data-aos-duration="3000"
+                         data-aos-delay="200"
+                         data-aos-anchor-placement="center-bottom">
                         <div class="work__card-infos">
                             <div class="work__card-link">
                                 <a href="https://lawoodfactory.fr/"
@@ -544,7 +571,7 @@
             <h1>Retournez en mode portrait <br>pour voir mon portfolio</h1>
         </section>
         <!--CONTACT-->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__shape">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -558,7 +585,9 @@
                 </svg>
             </div>
             <h1 class="contact__title">&__contact-me</h1>
-            <div class="contact__form">
+            <div class="contact__form"
+                 data-aos="zoom-in"
+                 data-aos-duration="2000">
                 <form action="#">
                     <div class="contact__form-contents">
                         <div class="contact__form-content">
@@ -598,7 +627,9 @@
                 <a href="https://www.linkedin.com/in/liohumb/"
                    title="Lien vers la page linkedin de Lionel Humbert, développeur web"
                    target="_blank"
-                   data-text="@liohumb">
+                   data-text="@liohumb"
+                   data-aos="zoom-in"
+                   data-aos-delay="600">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 24 24">
@@ -612,7 +643,9 @@
                 <a href="https://github.com/liohumb"
                    title="Lien vers le profil GitHub de Lionel Humbert, développeur web"
                    target="_blank"
-                   data-text="@liohumb">
+                   data-text="@liohumb"
+                   data-aos="zoom-in"
+                   data-aos-delay="1400">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 24 24">
@@ -624,7 +657,9 @@
                 </a>
                 <a href="mailto: helloliohumb@gmail.com"
                    title="Lien pour envoyer un email à Lionel Humbert, développeur web"
-                   data-text="helloliohumb@gmail.com">
+                   data-text="helloliohumb@gmail.com"
+                   data-aos="zoom-in"
+                   data-aos-delay="200">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 512 512">
@@ -635,7 +670,9 @@
                 </a>
                 <a href="tel: +33685014482"
                    title="Lien pour appeler Lionel Humbert, développeur web"
-                   data-text="06.85.01.44.82">
+                   data-text="06.85.01.44.82"
+                   data-aos="zoom-in"
+                   data-aos-delay="1000">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 20 20">
@@ -645,118 +682,252 @@
                 </a>
             </div>
         </section>
-    <footer class="footer">
-        <div class="footer__header">
-            <div class="footer__header-logo">
-                <img src="assets/images/footer/logo4.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo2.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo1.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo3.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo4.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo1.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo3.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo2.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo1.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo3.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo4.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-                <img src="assets/images/footer/logo.png" alt="Logo de Lionel Humbert alias Lio Humb, développeur web">
-            </div>
-        </div>
-        <div class="footer__container">
-            <div class="footer__container-left">
-                <div class="footer__title">
-                    <h1 class="footer__title-first">Je n'ai plus qu'à vous dire</h1>
-                    <h1 class="footer__title-second">À bientôt !</h1>
-                    <h1 class="footer__title-third">👋</h1>
+        <footer class="footer">
+            <div class="footer__header">
+                <div class="footer__header-logo">
+                    <img src="assets/images/footer/logo4.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="100">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="200">
+                    <img src="assets/images/footer/logo2.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="300">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="400">
+                    <img src="assets/images/footer/logo1.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="500">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="600">
+                    <img src="assets/images/footer/logo3.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="700">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="800">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="900">
+                    <img src="assets/images/footer/logo4.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1000">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1100">
+                    <img src="assets/images/footer/logo1.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1200">
+                    <img src="assets/images/footer/logo3.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1300">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1400">
+                    <img src="assets/images/footer/logo2.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1500">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1600">
+                    <img src="assets/images/footer/logo1.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1700">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1800">
+                    <img src="assets/images/footer/logo3.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="1900">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="2000">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="2100">
+                    <img src="assets/images/footer/logo4.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="2200">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="2300">
+                    <img src="assets/images/footer/logo.png"
+                         alt="Logo de Lionel Humbert alias Lio Humb, développeur web"
+                         data-aos="zoom-out"
+                         data-aos-duration="2000"
+                         data-aos-delay="2400">
                 </div>
             </div>
-            <div class="footer__container-right">
-                <div class="footer__container-rightTop">
-                    <div class="footer__contact">
-                        <h1 class="footer__contact-name">Lio<span>nel</span> Humb<span>ert</span></h1>
-                        <a href="mailto: helloliohumb@gmail.com"
-                           title="Lien pour envoyer un email à Lionel Humbert, développeur web"
-                           data-text="helloliohumb@gmail.com"
-                           class="footer__contact-email">
-                            <span class="footer__contact-emailHello">hello</span>
-                            <span class="footer__contact-emailLio">lio</span>
-                            <span class="footer__contact-emailHumb">humb</span>
-                            @gmail.com
-                        </a>
-                        <a href="tel: +33685014482"
-                           title="Lien pour appeler Lionel Humbert, développeur web"
-                           data-text="06.85.01.44.82"
-                           class="footer__contact-phone">
-                            +33
-                            <span class="footer__contact-phoneZero">(0)</span>
-                            <span class="footer__contact-phoneFirst">6</span>
-                            <span class="footer__contact-phoneSecond">85</span>
-                            <span class="footer__contact-phoneThird">01</span>
-                            <span class="footer__contact-phoneFourth">44</span>
-                            <span class="footer__contact-phoneFifth">82</span>
-                        </a>
+            <div class="footer__container">
+                <div class="footer__container-left">
+                    <div class="footer__title">
+                        <h1 class="footer__title-first"
+                            data-aos="fade-right"
+                            data-aos-duration="3000"
+                            data-aos-delay="100">Je n'ai plus qu'à vous dire</h1>
+                        <h1 class="footer__title-second"
+                            data-aos="fade-left"
+                            data-aos-duration="3000"
+                            data-aos-delay="400">À bientôt !</h1>
+                        <h1 class="footer__title-third"
+                            data-aos="fade-up"
+                            data-aos-duration="3000"
+                            data-aos-delay="500">👋</h1>
                     </div>
                 </div>
-                <div class="footer__container-rightBottom">
-                    <div class="footer__links">
-                        <ul class="footer__links-list">
-                            <li>
-                                <a href="#"
-                                   title="Lien vers la page d'accueil"
-                                   class="footer__links-link"
-                                   data-text="Home">
-                                    <span>Accueil</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                   title="Lien vers la section à propos de Lionel Humbert"
-                                   class="footer__links-link"
-                                   data-text="About">
-                                    <span>À propos</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                   title="Lien vers la section portfolio de Lionel Humbert"
-                                   class="footer__links-link"
-                                   data-text="Work">
-                                    <span>Portfolio</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                   title="Lien vers le formulaire de contact"
-                                   class="footer__links-link"
-                                   data-text="Contact me">
-                                    <span>Contactez moi</span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="footer__container-right">
+                    <div class="footer__container-rightTop">
+                        <div class="footer__contact">
+                            <h1 class="footer__contact-name"
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                                data-aos-delay="200">Lio<span>nel</span> Humb<span>ert</span></h1>
+                            <a href="mailto: helloliohumb@gmail.com"
+                               title="Lien pour envoyer un email à Lionel Humbert, développeur web"
+                               data-text="helloliohumb@gmail.com"
+                               class="footer__contact-email"
+                               data-aos="fade-up"
+                               data-aos-duration="3000"
+                               data-aos-delay="400">
+                                <span class="footer__contact-emailHello">hello</span>
+                                <span class="footer__contact-emailLio">lio</span>
+                                <span class="footer__contact-emailHumb">humb</span>
+                                @gmail.com
+                            </a>
+                            <a href="tel: +33685014482"
+                               title="Lien pour appeler Lionel Humbert, développeur web"
+                               data-text="06.85.01.44.82"
+                               class="footer__contact-phone"
+                               data-aos="fade-up"
+                               data-aos-duration="3000"
+                               data-aos-delay="500">
+                                +33
+                                <span class="footer__contact-phoneZero">(0)</span>
+                                <span class="footer__contact-phoneFirst">6</span>
+                                <span class="footer__contact-phoneSecond">85</span>
+                                <span class="footer__contact-phoneThird">01</span>
+                                <span class="footer__contact-phoneFourth">44</span>
+                                <span class="footer__contact-phoneFifth">82</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="footer__copyright">
-                        <p class="footer__copyright-text">
-                            ©
-                            Lio<span>nel</span>
-                            Humb<span>ert</span>
-                            , tous droits réservés • 2022
-                        </p>
+                    <div class="footer__container-rightBottom">
+                        <div class="footer__links">
+                            <ul class="footer__links-list">
+                                <li>
+                                    <a href="#home"
+                                       title="Lien vers la page d'accueil"
+                                       class="footer__links-link"
+                                       data-text="Home"
+                                       data-aos="fade-up"
+                                       data-aos-duration="2000"
+                                       data-aos-delay="100"
+                                       data-aos-anchor-placement="bottom-bottom">
+                                        <span>Accueil</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about"
+                                       title="Lien vers la section à propos de Lionel Humbert"
+                                       class="footer__links-link"
+                                       data-text="About"
+                                       data-aos="fade-up"
+                                       data-aos-duration="2000"
+                                       data-aos-delay="200"
+                                       data-aos-anchor-placement="bottom-bottom">
+                                        <span>À propos</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#work"
+                                       title="Lien vers la section portfolio de Lionel Humbert"
+                                       class="footer__links-link"
+                                       data-text="Work"
+                                       data-aos="fade-up"
+                                       data-aos-duration="2000"
+                                       data-aos-delay="300"
+                                       data-aos-anchor-placement="bottom-bottom">
+                                        <span>Portfolio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact"
+                                       title="Lien vers le formulaire de contact"
+                                       class="footer__links-link"
+                                       data-text="Contact me"
+                                       data-aos="fade-up"
+                                       data-aos-duration="2000"
+                                       data-aos-delay="400"
+                                       data-aos-anchor-placement="bottom-bottom">
+                                        <span>Contactez moi</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright"
+                             data-aos="fade-up"
+                             data-aos-duration="2000"
+                             data-aos-delay="700"
+                             data-aos-anchor-placement="bottom-bottom">
+                            <p class="footer__copyright-text">
+                                ©
+                                Lio<span>nel</span>
+                                Humb<span>ert</span>
+                                , tous droits réservés • 2022
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>

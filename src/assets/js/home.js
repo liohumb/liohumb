@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import {FontLoader} from "three/examples/jsm/loaders/FontLoader"
 import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry"
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls"
+import gsap from 'gsap'
 
 /* CANVAS */
 const canvas = document.querySelector('canvas.home__container-background')
@@ -494,9 +495,7 @@ scene.add(
 
 /* CAMERA */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 100)
-camera.position.x = - 2
-camera.position.y = - 1
-camera.position.z = 7
+camera.position.z = 100
 
 scene.add(camera)
 
@@ -515,17 +514,19 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 /* ANIMATE */
-// clock
-// const clock = new THREE.Clock
+// gsap
+gsap.to(camera.position, {
+    duration: 7,
+    delay: 4,
+    x: -4,
+    y: -1,
+    z: 7
+})
 
 // tick
 const tick = () => {
-    // elapsed time
-    // const elapsedTime = clock.getElapsedTime()
-
     // update controls
     controls.update()
-
     // render
     renderer.render(scene, camera)
     // call tick again on the next frame

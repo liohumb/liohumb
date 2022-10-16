@@ -36,6 +36,24 @@
         margin: 0 5rem;
       }
     }
+
+    @media (max-width: 768px) {
+      height: 200px;
+
+      img {
+        height: 175px;
+        margin: 0 3rem;
+      }
+    }
+
+    @media (max-width: 425px) {
+      height: 175px;
+
+      img {
+        height: 150px;
+        margin: 0 2.5rem;
+      }
+    }
   }
 
   &__container {
@@ -312,6 +330,7 @@
     color: $text-color-light;
     text-transform: uppercase;
     margin: 2rem 0 0 0;
+    padding: 0 0 2rem 0;
 
     span {
       color: $first-color-light;
