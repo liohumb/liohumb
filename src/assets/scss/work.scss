@@ -637,12 +637,12 @@
       height: #{75vmin * 5};
     }
 
-    @media (max-width: 1520px) {
+    @media (max-width: 1520px) and (max-height: 735px){
       height: #{75vmin * 5};
     }
 
     @media (max-width: 1200px) {
-      height: #{66vmin * 5};
+      height: #{70vmin * 5};
     }
 
     @media (max-width: 1024px) {
