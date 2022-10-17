@@ -1,8 +1,8 @@
 import gsap from "gsap"
 
 gsap.to(".loader", {
-    duration: 3,
-    delay: 6,
+    duration: 2.5,
+    delay: 4,
     opacity: 0,
     display: "none"
 })

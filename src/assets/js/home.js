@@ -517,7 +517,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 // gsap
 gsap.to(camera.position, {
     duration: 7,
-    delay: 4,
+    delay: 2.5,
     x: -4,
     y: -1,
     z: 7
