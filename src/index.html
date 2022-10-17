@@ -588,11 +588,12 @@
             <div class="contact__form"
                  data-aos="zoom-in"
                  data-aos-duration="2000">
-                <form action="#">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="bcd01f93-e2ba-463a-8e64-2ac808525c78">
                     <div class="contact__form-contents">
                         <div class="contact__form-content">
                             <label for="name">Bonjour, je m'appelle </label>
-                            <input type="text" id="name" name="name" placeholder="votre nom">
+                            <input type="text" id="name" name="Voici un message de :" placeholder="votre nom">
                             <span>,</span>
                         </div>
                         <div class="contact__form-content">
@@ -602,13 +603,13 @@
                         </div>
                     </div>
                     <div class="contact__form-contents">
-                        <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                        <textarea name="Qui vous dit :" id="message" placeholder="Votre message"></textarea>
                         <label for="message"></label>
                     </div>
                     <div class="contact__form-contents">
                         <div class="contact__form-content">
                             <label for="email">Vous pouvez me répondre à l'adresse: </label>
-                            <input type="email" id="email" name="email" placeholder="votre@email.com">
+                            <input type="email" id="email" name="Tu peux lui répondre à :" placeholder="votre@email.com">
                         </div>
                     </div>
                     <div class="contact__form-contents">
