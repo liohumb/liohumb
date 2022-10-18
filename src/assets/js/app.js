@@ -19,7 +19,6 @@ import 'aos/dist/aos.css'
 AOS.init({
     offset: 60,
     once: false,
-    disable: 'phone',
     duration: 300,
     initClassName: 'aos-init',
     animatedClassName: 'aos-animate',
