@@ -76,7 +76,7 @@ next()
 
 /* PICTURES */
 const polaroidMe = document.querySelector('.about__profil-me')
-const zoomMeSpeed = .001
+const zoomMeSpeed = .005
 
 let zoom = 1
 

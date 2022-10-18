@@ -91,7 +91,7 @@
     max-width: 100%;
     height: 100%;
     display: flex;
-    margin: 10rem 0 2rem 0;
+    margin: 10rem 0;
 
     @media (max-width: 1024px) {
       margin: 6rem 0;
@@ -114,9 +114,7 @@
     }
 
     &-link {
-      @media (max-width: 1200px) {
-        margin: -4rem 0 0 0;
-      }
+      margin: -4rem 0 0 0;
 
       @media (max-width: 1024px) {
         padding: 0;
@@ -615,66 +613,190 @@
   }
 
   &__space {
-    height: #{72vmin * 5};
+    height: #{54vmin * 4};
 
-    @media (max-width: 2270px) {
-      height: #{66vmin * 5};
+    @media (max-width: 1440px) {
+      height: #{55vmin * 4};
+
+      @media (max-height: 1200px) {
+        height: #{60vmin * 4};
+      }
+
+      @media (max-height: 1120px) {
+        height: #{70vmin * 4};
+      }
+
+      @media (max-height: 980px) {
+        height: #{80vmin * 4};
+      }
+
+      @media (max-height: 820px) {
+        height: #{90vmin * 4};
+      }
+
+      @media (max-height: 740px) {
+        height: #{100vmin * 4};
+      }
+
+      @media (max-height: 670px) {
+        height: #{110vmin * 4};
+      }
+
+      @media (max-height: 600px) {
+        height: #{120vmin * 4};
+      }
+
+      @media (max-height: 545px) {
+        height: #{130vmin * 4};
+      }
+
+      @media (max-height: 510px) {
+        height: #{140vmin * 4};
+      }
+
+      @media (max-height: 470px) {
+        height: #{150vmin * 4};
+      }
     }
 
-    @media (max-width: 2180px) {
-      height: #{64vmin * 5};
-    }
+    @media (max-width: 1275px) {
+      height: #{60vmin * 4};
 
-    @media (max-width: 2060px) {
-      height: #{62vmin * 5};
-    }
+      @media (max-height: 1200px) {
+        height: #{60vmin * 4};
+      }
 
-    @media (max-width: 2000px) {
-      height: #{60vmin * 5};
-    }
+      @media (max-height: 1120px) {
+        height: #{70vmin * 4};
+      }
 
-    @media (max-width: 1890px) {
-      height: #{75vmin * 5};
+      @media (max-height: 980px) {
+        height: #{80vmin * 4};
+      }
+
+      @media (max-height: 820px) {
+        height: #{90vmin * 4};
+      }
+
+      @media (max-height: 740px) {
+        height: #{100vmin * 4};
+      }
+
+      @media (max-height: 670px) {
+        height: #{110vmin * 4};
+      }
+
+      @media (max-height: 600px) {
+        height: #{120vmin * 4};
+      }
+
+      @media (max-height: 545px) {
+        height: #{130vmin * 4};
+      }
+
+      @media (max-height: 510px) {
+        height: #{140vmin * 4};
+      }
+
+      @media (max-height: 470px) {
+        height: #{150vmin * 4};
+      }
     }
 
     @media (max-width: 1200px) {
-      height: #{70vmin * 5};
+      height: #{62vmin * 4};
+
+      @media (max-height: 1120px) {
+        height: #{65vmin * 4};
+      }
+
+      @media (max-height: 980px) {
+        height: #{75vmin * 4};
+      }
+
+      @media (max-height: 820px) {
+        height: #{85vmin * 4};
+      }
     }
 
     @media (max-width: 1024px) {
-      height: #{62vmin * 5};
-    }
+      height: #{62vmin * 4};
 
-    @media (max-width: 920px) {
-      height: #{56vmin * 5};
+      @media (max-height: 740px) {
+        height: #{70vmin * 4};
+      }
+
+      @media (max-height: 670px) {
+        height: #{75vmin * 4};
+      }
+
+      @media (max-height: 600px) {
+        height: #{85vmin * 4};
+      }
+
+      @media (max-height: 545px) {
+        height: #{95vmin * 4};
+      }
+
+      @media (max-height: 510px) {
+        height: #{105vmin * 4};
+      }
+
+      @media (max-height: 470px) {
+        height: #{115vmin * 4};
+      }
     }
 
     @media (max-width: 768px) {
-      height: #{77vmin * 5};
+      height: #{96vmin * 4};
+
+      @media (max-height: 600px) {
+        height: #{105vmin * 4};
+      }
+
+      @media (max-height: 545px) {
+        height: #{115vmin * 4};
+      }
+
+      @media (max-height: 510px) {
+        height: #{125vmin * 4};
+      }
+
+      @media (max-height: 470px) {
+        height: #{135vmin * 4};
+      }
     }
 
     @media (max-width: 620px) {
-      height: #{85vmin * 5};
+      height: #{107vmin * 4};
+
+      @media (max-height: 510px) {
+        height: #{115vmin * 4};
+      }
+
+      @media (max-height: 470px) {
+        height: #{125vmin * 4};
+      }
     }
 
     @media (max-width: 510px) {
-      height: #{90vmin * 5};
+      height: #{120vmin * 4};
     }
 
     @media (max-width: 460px) {
-      height: #{115vmin * 5};
+      height: #{140vmin * 4};
     }
 
     @media (max-width: 375px) {
-      height: #{122vmin * 5};
+      height: #{150vmin * 4};
     }
 
     @media (max-width: 335px) {
-      height: #{130vmin * 5};
+      height: #{165vmin * 4};
     }
 
     @media (max-width: 300px) {
-      height: #{150vmin * 5};
+      height: #{176vmin * 4};
     }
   }
 
